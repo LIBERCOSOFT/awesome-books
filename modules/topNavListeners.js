@@ -1,6 +1,6 @@
 const addBookForm = document.querySelector ('.add-book-form');
 const contactInfo = document.querySelector ('.contact-info');
-const books = document.querySelector ('.books');
+const books = document.querySelector ('.book-list');
 const listColor = document.querySelector ('.list-color');
 const addColor = document.querySelector ('.add-color');
 const contactColor = document.querySelector ('.contact-color');
