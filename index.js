@@ -2,6 +2,7 @@ import BookObj from './modules/bookObj.js';
 import displaySavedBooks from './modules/displaySavedBooks.js';
 import addBookToDom from './modules/addBookToDom.js';
 import Listeners from './modules/topNavListeners.js';
+import {DateTime} from './modules/luxon.js';
 
 const form = document.querySelector ('form');
 const dateTimeDiv = document.querySelector ('.date');
@@ -43,17 +44,8 @@ onload = () => {
   if (localStorage.getItem ('allBooks')) {
     displaySavedBooks ();
   }
-  var today = new Date ();
-  var date =
-    today.getMonth () +
-    1 +
-    '-' +
-    today.getDate () +
-    'th-' +
-    today.getFullYear ();
-  var time =
-    today.getHours () + ':' + today.getMinutes () + ':' + today.getSeconds ();
-  var dateTime = date + ', ' + time;
 
-  dateTimeDiv.innerHTML = dateTime;
+  setInterval (() => {
+    dateTimeDiv.innerHTML = DateTime.now ();
+  }, 1000);
 };
