@@ -4,7 +4,7 @@
 
 - If you like it please give it a Star⭐️, also you can follow :wink:
 
-> ![](./awesome_book.png)
+> ![project screenshot](./awesome_book.png)
 
 ## Built With
 

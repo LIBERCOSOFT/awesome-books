@@ -2,7 +2,7 @@ import BookObj from './modules/bookObj.js';
 import displaySavedBooks from './modules/displaySavedBooks.js';
 import addBookToDom from './modules/addBookToDom.js';
 import Listeners from './modules/topNavListeners.js';
-import {DateTime} from './modules/luxon.js';
+import {DateTime} from './modules/luxon.min.js';
 
 const form = document.querySelector ('form');
 const dateTimeDiv = document.querySelector ('.date');
