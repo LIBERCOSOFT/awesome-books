@@ -1,4 +1,4 @@
-export default function deleteBook (e) {
+const deleteBook = e => {
   const parentEle = e.target.parentElement;
   parentEle.remove ();
 
@@ -11,4 +11,6 @@ export default function deleteBook (e) {
     }
   });
   localStorage.setItem ('allBooks', JSON.stringify (allBooks));
-}
+};
+
+export default deleteBook;

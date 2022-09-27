@@ -1,6 +1,6 @@
 import deleteBook from './deleteBook.js';
 
-export default function addBookForm (book) {
+const addBookToDom = book => {
   const books = document.querySelector ('.books');
   const bookItem = document.createElement ('div');
   bookItem.className = 'book-item';
@@ -17,4 +17,6 @@ export default function addBookForm (book) {
   button.innerText = 'Delete';
   bookItem.appendChild (button);
   books.appendChild (bookItem);
-}
+};
+
+export default addBookToDom;
